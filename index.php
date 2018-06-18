@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PHP Human Model</title>
+	<title>Are you human?</title>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-	<h1 class="center">What makes you human?</h1>
+	<h1 class="center">Are you human ?</h1>
+	<form class="center" action="question.php" method="post">
+		<input type="radio" name="human" value="yes" required> Yes 
+ 		<input type="radio" name="human" value="no" required> No
+ 		<button type="submit" name="submit">Submit</button>
+	</form>
 
-	<form class="center" action="human.php" method="post"><br>
 
-		First Name: <br> <input type="text" name="firstName"><br>
-
-		Last Name: <br> <input type="text" name="lastName"> <br>
-
-		Age: <br> <input type="intiger" name="age"><br>
-
-		Gender: <br>  
-		<input type="radio" name="gender" value="male"> Male
- 		<input type="radio" name="gender" value="female"> Female<br>
-
-		<input type="submit">
-
-	</form>	
-	
 </body>
 </html>
